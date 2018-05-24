@@ -9,6 +9,19 @@
 	<link rel="stylesheet" href="css/custom-min.css">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 	<title>Impact Research</title>
+	<style>
+		/* This is to offset the navbar when you navigate to article titles - Asher */
+		.anchor{
+			display: block;
+    		position: relative;
+    		width: 0;
+			z-index: -1;
+			top: -108px;
+			left: 0;
+			visibility: hidden;
+			height: 0;
+		}
+	</style>
 </head>
 
 <body>
@@ -47,313 +60,1223 @@
 		<div class="container">
 			<div class="main header-flex">
 				<nav>
-					<div id="projectNav" class="primary-list" role="tablist" aria-multiselectable="true"> <!-- un nest this list -->
-						<a class="collapseBtn" data-toggle="collapse" data-parent="#projectNav" data-target="#recentProjects" href="#recentProjects" aria-expanded="true" aria-controls="recentProjects">Recent Projects</a>
-							<ul id="recentProjects" class="secondary-list collapse" role="tabpanel">
-								<li>
-									<a href="">Brainwave Trust Aotearoa - 2017</a>
-								</li>
-								<li>
-									<a href="">Habitat For Humanity Auckland - 2017</a>
-								</li>
-								<li>
-									<a href=""> Enliven Home-Based Support service RBA refresh - 2017</a>
-								</li>
-								<li>
-									<a href=""> Enliven Bay of Plenty Home - Based Support Establishment with the Disabilities Resource Centre - 2017</a>
-								</li>
-								<li>
-									<a href=""> Lifeline RBA Evaluation - 2017</a>
-								</li>
-								<li>
-									<a href=""> A Women’s Refuge Trust - 2017</a>
-								</li>
-								<li>
-									<a href=""> SHINE in School programme - 2017 </a>
-								</li>
-								<li>
-									<a href="">Kia Piki ai te Oranga a Nga Whānau me Nga Hapū - 2016</a>
-								</li>
-								<li>
-									<a href="">The Royal New Zealand Plunket Society – Family Works Northern research on the joint Early Intervention Service -
-										2016</a>
-								</li>
-								<li>
-									<a href="">START Taranaki Results Based Accountability (RBA) Evaluation</a>
-								</li>
-								<li>
-									<a href="">Family Works Resolution Service RBA Evaluation</a>
-								</li>
-								<li>
-									<a href="">Enliven Home Based Support Results Based Accountability (RBA) Evaluation</a>
-								</li>
-								<li>
-									<a href="">Social Workers in Schools (SWiS) RBA Evaluation</a>
-								</li>
-								<li>
-									<a href="">Family Works Resolution Service RBA Evaluation</a>
-								</li>
-								<li>
-									<a href="">Family Works Northern Results Based Accountability (RBA) Casework Evaluation Client Survey Report</a>
-								</li>
-							</ul>
-						
-							<a class="collapseBtn" data-toggle="collapse" data-parent="#projectNav" data-target="#otherProjects" href="#otherProjects" aria-expanded="true" aria-controls="otherProjects">2017</a>
-								<ul id="otherProjects" class="secondary-list collapse" role="tabpanel">
-									<li>
-										<a href="">List Item</a>
-									</li>
-									<li>
-										<a href="">List Item</a>
-									</li>
-									<li>
-										<a href="">List Item</a>
-									</li>
-									<li>
-										<a href="">List Item</a>
-									</li>
-									<li>
-										<a href="">List Item</a>
-									</li>
-									<li>
-										<a href="">List Item</a>
-									</li>
-								</ul>
-								<a class="collapseBtn" data-toggle="collapse" data-parent="#projectNav" data-target="#previousProjects" href="#previousProjects" aria-expanded="true" aria-controls="recentProjects">2016</a>
-								<ul id="previousProjects" class="secondary-list collapse" role="tabpanel">
-									<li>
-										<a href="">List Item</a>
-									</li>
-									<li>
-										<a href="">List Item</a>
-									</li>
-									<li>
-										<a href="">List Item</a>
-									</li>
-									<li>
-										<a href="">List Item</a>
-									</li>
-									<li>
-										<a href="">List Item</a>
-									</li>
-									<li>
-										<a href="">List Item</a>
-									</li>
-								</ul>
-								
-						<li>Research Findings</li>
+					<div id="projectNav" class="primary-list" role="tablist" aria-multiselectable="true">
+						<!-- un nest this list -->
+						<a class="collapseBtn collapsed" data-toggle="collapse" data-parent="#projectNav" data-target="#recentProjects" href="#recentProjects"
+						 aria-expanded="true" aria-controls="recentProjects">Recent Projects</a>
+						<ul id="recentProjects" class="secondary-list collapse" role="tabpanel">
+							<li>
+								<a href="#art1">Brainwave Trust Aotearoa - 2017</a>
+							</li>
+							<li>
+								<a href="#art2">Habitat For Humanity Auckland - 2017</a>
+							</li>
+							<li>
+								<a href="#art3"> Enliven Home-Based Support service RBA refresh - 2017</a>
+							</li>
+							<li>
+								<a href="#art4"> Enliven Bay of Plenty Home - Based Support Establishment with the Disabilities Resource Centre - 2017</a>
+							</li>
+							<li>
+								<a href="#art5"> Lifeline RBA Evaluation - 2017</a>
+							</li>
+							<li>
+								<a href="#art6"> A Women’s Refuge Trust - 2017</a>
+							</li>
+							<li>
+								<a href="#art7"> SHINE in School programme - 2017 </a>
+							</li>
+							<li>
+								<a href="#art8">Kia Piki ai te Oranga a Nga Whānau me Nga Hapū - 2016</a>
+							</li>
+							<li>
+								<a href="#art9">The Royal New Zealand Plunket Society – Family Works Northern research on the joint Early Intervention Service -
+									2016
+								</a>
+							</li>
+							<li>
+								<a href="#art10">START Taranaki Results Based Accountability (RBA) Evaluation</a>
+							</li>
+							<li>
+								<a href="#art11">Family Works Resolution Service RBA Evaluation</a>
+							</li>
+							<li>
+								<a href="#art12">Enliven Home Based Support Results Based Accountability (RBA) Evaluation</a>
+							</li>
+							<li>
+								<a href="#art13">Social Workers in Schools (SWiS) RBA Evaluation</a>
+							</li>
+							<li>
+								<a href="#art14">Family Works Resolution Service RBA Evaluation</a>
+							</li>
+							<li>
+								<a href="#art15">Family Works Northern Results Based Accountability (RBA) Casework Evaluation Client Survey Report</a>
+							</li>
+						</ul>
+
+						<a class="collapseBtn collapsed" data-toggle="collapse" data-parent="#projectNav" data-target="#otherProjects" href="#otherProjects"
+						 aria-expanded="true" aria-controls="otherProjects">Other Projects</a>
+						<ul id="otherProjects" class="secondary-list collapse" role="tabpanel">
+							<li>
+								<a href="#art16">Family Works Resolution Service: Results Based Accountability Pilot</a>
+							</li>
+							<li>
+								<a href="#art17">Developing NGO Capacity to Undertake Evaluation</a>
+							</li>
+							<li>
+								<a href="#art18">Community Initiative – Process Evaluation</a>
+							</li>
+							<li>
+								<a href="#art19">Social Workers in Schools RBA Evaluation</a>
+							</li>
+							<li>
+								<a href="#art20">Family Works New Zealand RBA Pilot Survey</a>
+							</li>
+							<li>
+								<a href="#art21">An External Review of the Response Made by The Salvation Army to the two Canterbury Earthquakes of September 2010 and February 2011</a>
+							</li>
+						</ul>
+						<a class="collapseBtn collapsed" data-toggle="collapse" data-parent="#projectNav" data-target="#previousProjects" href="#previousProjects"
+						 aria-expanded="true" aria-controls="previousProjects">Previous Projects</a>
+						<ul id="previousProjects" class="secondary-list collapse" role="tabpanel">
+							<li>
+								<a href="#art22">A selection of Impact Research NZ Research and Evaluation Project Summaries</a>
+							</li>
+							<li>
+								<a href="#art23">Effective Client-Focused Dementia Day Programmes in the Community: Improving the quality of life for people living with dementia and their families</a>
+							</li>
+							<li>
+								<a href="#art24">The Royal New Zealand Plunket Society - Family Works Northern Results Based Accountability Pilot Evaluation</a>
+							</li>
+							<li>
+								<a href="#art25">'Dancing with Data' Programme</a>
+							</li>
+							<li>
+								<a href="#art26">Family Works Northern Results Based Accountability (RBA) Qualitative Analysis of Client Feedback</a>
+							</li>
+							<li>
+								<a href="#art27">Enliven Stakeholder Survey</a>
+							</li>
+							<li>
+								<a href="#art28">ACC Home and Community Support Services: Initial scoping exercise towards a standardised approach to data collection and client outcomes</a>
+							</li>
+							<li>
+								<a href="#art29">Enliven ACC, Results Based Accountability (RBA) Pilot Evaluation</a>
+							</li>
+							<li>
+								<a href="#art30">Evaluation of the Royal New Zealand Plunket Society–Presbyterian Support Northern Family Works Early Intervention Partnership Pilot</a>
+							</li>
+							<li>
+								<a href="#art31">Presbyterian Support Northern and the West Fono Health Trust, Waitakere Family Start.Results Based Accountability Pilot Evaluation</a>
+							</li>
+							<li>
+								<a href="#art32">Presbyterian Support Northern, Whakamanhia Wahine Tauranga Women’s Programme Evaluation</a>
+							</li>
+							<li>
+								<a href="#art33">Family Works Northern Social Workers in Schools (SWiS) Results Based Accountability (RBA) Evaluation</a>
+							</li>
+						</ul>
+						<a class="collapseBtn collapsed" data-toggle="collapse" data-parent="#projectNav" data-target="#previousResearch" href="#previousResearch"
+						 aria-expanded="true" aria-controls="previousResearch">Ongoing Projects</a>
+						<ul id="previousResearch" class="secondary-list collapse" role="tabpanel">
+							<li>
+								<a href="#art34">Incredible Years</a>
+							</li>
+							<li>
+								<a href="#art35">Inner City Interconnectedness</a>
+							</li>
+							<li>
+								<a href="#art36">Kidpower Healthy Relationships</a>
+							</li>
+							<li>
+								<a href="#art37">Kiribati – Environmental Migrants</a>
+							</li>
+							<li>
+								<a href="#art38">Midlands - Results Based Assessment</a>
+							</li>
+							<li>
+								<a href="#art39">National Social Workers in Schools (SWiS)</a>
+							</li>
+							<li>
+								<a href="#art40">Plunket</a>
+							</li>
+							<li>
+								<a href="#art41">Results Based Assessment</a>
+							</li>
+							<li>
+								<a href="#art42">Refugee Catch-Up Class</a>
+							</li>
+							<li>
+								<a href="#art43">Safer Homes in New Zealand Everyday (Shine)</a>
+							</li>
+							<li>
+								<a href="#art44">Social Workers in Schools</a>
+							</li>
+							<li>
+								<a href="#art45">The Theatre in Education Trust (THETA) Sexwise Programme</a>
+							</li>
+							<li>
+								<a href="#art46">Waitakere Process Evaluation</a>
+							</li>
+						</ul>
+						<li><a href="#researchFindings">Research Findings</a></li>
 					</div>
 				</nav>
 				<div class="content">
-					<h2>2017</h2>
-					<div class="article">
-						<strong>
-							Brainwave Trust Aotearoa - 2017	
+					<h2>Recent Projects</h2>
+
+
+					<p style="color: #00b1b0">
+						<strong>A selection of Impact Research NZ Projects 2017
+							<br>
 						</strong>
-						<p>Impact Research NZ was commissioned by Brainwave Trust Aotearoa to review their existing
-							documents and evaluate the effectiveness of their programmes and seminars for those attending.
-							The aim of the project was to develop and pilot a Results Based Accountability (RBA) framework and
-							tools to measure their activities from the perspectives of key stakeholders and to provide baseline
-							data. Training in RBA was provided to Brainwave staff and a RBA manual was developed to enable.
-						</p>
+					</p>
+					<br>
 
-						<p>Brainwave in the future to evaluate the effectiveness of their activities.
-							Brainwave Trust Aotearoa is a charitable trust that aims to raise public awareness around healthy
-							brain development in babies, young children and adolescents. They deliver seminars and
-							programmes based on robust scientific research to a variety of organisations and individuals who
-							have an interest in ensuring the safety and wellbeing of young New Zealanders.
-						</p>
-
-						<p>The project involved seven key areas for investigation:</p>
-
-						<ul>
-							<li>The views of staff and Educators were sought via an online survey on how effective the 
-								organisation is in achieving its aims and objectives, the quality of presentation and programme
-								 development and delivery as well as areas for improvement.
-							</li>
-							<li>Brainwave School’s programme asked secondary school students via an online survey and
-							student focus group about the effectiveness of the programme. Staff members were asked
-							via an online survey about the alignment with the school curriculum and areas for
-							improvement.
-							</li>
-							<li>Brainwave School’s programme (Health Achievement Standard) – students were asked via
-							an online survey about how well the programme contributed to them achieving their Health
-							Achievement Standard.</li>
-							<li>Canterbury Vulnerable Families Initiative programme was designed for families living in low
-							socio-economic areas affected by the Canterbury earthquakes. Selected parents and
-							caregivers were invited to share their experiences of attending seminars via a focus group
-							and online survey. Professionals from referring agencies such as CYF, police and Plunket via
-							an online survey were invited to share their views on the effectiveness of the seminar for
-							those who they referred.</li>
-							<li>The views of groups and organisations who book Brainwave presentations were asked via an
-							online survey if their needs and expectations were met by the presentations.</li>
-							<li>The views of Brainwave Trustees were asked via an online survey whether the organisation was on track to achieve its vision and mission, as well as adhering to the principles of its strategic direction and the effectiveness of the programmes.</li>
-							<li>Key stakeholders (e.g. NGOs, professionals working with vulnerable children and adolescents) were asked via an online survey about their engagement with Brainwave and how well the presentations were received by those attending and areas for improvement.</li>
-						</ul>
-					</div>
-					<div class="article">
+					<span class="anchor" id="art1"></span>
+					<p style="color: #00b1b0">
 						<strong>
-							Habitat For Humanity Auckland - 2017	
+							Brainwave Trust Aotearoa - 2017
 						</strong>
-						<p>Impact Research NZ was commissioned by Habitat for Humanity Auckland to undertake a social impact research project to inform their future direction. A Results Based Accountability (RBA) framework was developed and implemented. Two RBA workshops were held with senior management with the aim to increase the awareness of the RBA framework and how it can be utilised by Habitat for Humanity Auckland to improve its service outcomes leading to impact. A RBA manual was also provided to Habitat for Humanity Auckland to enable them to evaluate their future programmes and activities.</p>
-						<p>Habitat for Humanity Auckland offer programmes to help low-income earners in their living situations, providing them with services to maintain and repair their homes, and assistance towards home ownership.
-						</p>
-						<p>The project involved four key areas under investigation: The status of their current programmes, perceptions of the current rental housing market, views on a potential new programme and the current funding landscape. Data was gathered via the following methods.
-						</p>
-						<ul>
-							<li>Habitat for Humanity Auckland “A Brush with Kindness” (ABWK) and “Critical Home Repairs” (CHR) programmes. The views of clients were sought via telephone interviews about their experiences of the programmes as well as areas for improvement. The view of the ABWK programme manager was also sought via a face-to-face interview about the effectiveness of the programmes and potential future direction.</li>
-							<li>Rotary Club members were asked via an online survey and property managers via a telephone survey about their perceptions of the current rental housing market and a proposed new programme being developed by the organisation.</li>
-							<li>Selected Habitat for Humanity Auckland tenants shared their experiences of renting via a focus group.</li>
-							<li>Representatives from philanthropic trusts, local and national government were asked via face-to-face interviews about their perceptions of the current funding landscape and a proposed new programme being developed by the organisation.</li>
-						</ul>
-						<p>An overall report provided a high level synthesis of the key findings to inform the future direction of Habitat for Humanity Auckland and its programmes. RBA workshops ensured buy-in from senior managers who are responsible for implementing RBA with their teams.</p>
-					</div>
-					<div class="article">
+					</p>
+
+					<p>Impact Research NZ was commissioned by Brainwave Trust Aotearoa to review their existing documents and evaluate the
+						effectiveness of their programmes and seminars for those attending. The aim of the project was to develop and pilot
+						a Results Based Accountability (RBA) framework and tools to measure their activities from the perspectives of key stakeholders
+						and to provide baseline data. Training in RBA was provided to Brainwave staff and a RBA manual was developed to enable.</p>
+
+					<p>Brainwave in the future to evaluate the effectiveness of their activities. Brainwave Trust Aotearoa is a charitable
+						trust that aims to raise public awareness around healthy brain development in babies, young children and adolescents.
+						They deliver seminars and programmes based on robust scientific research to a variety of organisations and individuals
+						who have an interest in ensuring the safety and wellbeing of young New Zealanders.</p>
+					<p>The project involved seven key areas for investigation:</p>
+					<ul>
+						<li>The views of staff and Educators were sought via an online survey on how effective the organisation is in achieving
+							its aims and objectives, the quality of presentation and programme development and delivery as well as areas for improvement.</li>
+						<li>Brainwave School’s programme asked secondary school students via an online survey and student focus group about the
+							effectiveness of the programme. Staff members were asked via an online survey about the alignment with the school
+							curriculum and areas for improvement.
+						</li>
+						<li>Brainwave School’s programme (Health Achievement Standard) – students were asked via an online survey about how well
+							the programme contributed to them achieving their Health Achievement Standard.</li>
+						<li>Canterbury Vulnerable Families Initiative programme was designed for families living in low socio-economic areas affected
+							by the Canterbury earthquakes. Selected parents and caregivers were invited to share their experiences of attending
+							seminars via a focus group and online survey. Professionals from referring agencies such as CYF, police and Plunket
+							via an online survey were invited to share their views on the effectiveness of the seminar for those who they referred.</li>
+						<li>The views of groups and organisations who book Brainwave presentations were asked via an online survey if their needs
+							and expectations were met by the presentations.</li>
+						<li>The views of Brainwave Trustees were asked via an online survey whether the organisation was on track to achieve its
+							vision and mission, as well as adhering to the principles of its strategic direction and the effectiveness of the
+							programmes.</li>
+						<li>Key stakeholders (e.g. NGOs, professionals working with vulnerable children and adolescents) were asked via an online
+							survey about their engagement with Brainwave and how well the presentations were received by those attending and areas
+							for improvement.</li>
+					</ul>
+					<p>An overall synthesis report was provided to Brainwave which highlighted key findings that will be used to inform their
+						strategic direction and utilisation of the newly created RBA framework.</p>
+
+
+					<span class="anchor" id="art2"></span>
+					<p style="color: #00b1b0">
+						<strong id="art2">
+							Habitat For Humanity Auckland - 2017
+						</strong>
+					</p>
+					<p>Impact Research NZ was commissioned by Habitat for Humanity Auckland to undertake a social impact research project to
+						inform their future direction. A Results Based Accountability (RBA) framework was developed and implemented. Two RBA
+						workshops were held with senior management with the aim to increase the awareness of the RBA framework and how it can
+						be utilised by Habitat for Humanity Auckland to improve its service outcomes leading to impact. A RBA manual was also
+						provided to Habitat for Humanity Auckland to enable them to evaluate their future programmes and activities.</p>
+					<p>Habitat for Humanity Auckland offer programmes to help low-income earners in their living situations, providing them
+						with services to maintain and repair their homes, and assistance towards home ownership.</p>
+					<p>The project involved four key areas under investigation: The status of their current programmes, perceptions of the
+						current rental housing market, views on a potential new programme and the current funding landscape. Data was gathered
+						via the following methods.</p>
+
+					<ul>
+						<li>Habitat for Humanity Auckland “A Brush with Kindness” (ABWK) and “Critical Home Repairs” (CHR) programmes. The views
+							of clients were sought via telephone interviews about their experiences of the programmes as well as areas for improvement.
+							The view of the ABWK programme manager was also sought via a face-to-face interview about the effectiveness of
+						</li>
+						the programmes and potential future direction.
+						<li>Rotary Club members were asked via an online survey and property managers via a telephone survey about their perceptions
+							of the current rental housing market and a proposed new programme being developed by the organisation.
+						</li>
+						<li>Selected Habitat for Humanity Auckland tenants shared their experiences of renting via a focus group.</li>
+						<li>Representatives from philanthropic trusts, local and national government were asked via face-to-face interviews about
+							their perceptions of the current funding landscape and a proposed new programme being developed by the organisation.
+						</li>
+					</ul>
+					<p>An overall report provided a high level synthesis of the key findings to inform the future direction of Habitat for
+						Humanity Auckland and its programmes. RBA workshops ensured buy-in from senior managers who are responsible for implementing
+						RBA with their teams.</p>
+
+					<span class="anchor" id="art3"></span>
+					<p style="color: #00b1b0">
 						<strong>
 							Enliven Home-Based Support service RBA refresh - 2017
 						</strong>
-						<p>Impact Research NZ was commissioned by Presbyterian Support Northern to conduct a refresh of its current RBA framework for the Enliven Home-Based Support service. The purpose of this project was to evaluate the perspectives’ of key stakeholder groups to inform the development and utilisation of a new RBA framework for future use.</p>
-						<p>Enliven provides a range of home-based support services to clients who, as a result of aging or disability, are unable to carry out day to day tasks around the home. The focus of the service is to assist clients to remain healthy, maximise their independence and engage with their community. Clients are supported to achieve their own goals, receive help with personal care and household tasks.</p>
-						<p>Data was collected from the following groups: Representatives from the Ministry of Health, Home and Community Health Association, DHBs that Enliven contracts to, Enliven clients, staff and management.</p>
-						<ul>
-							<li>A document review was used to inform questions for interviews and surveys with key stakeholder groups.</li>
-							<li>A selected group of Enliven clients were surveyed via telephone interviews about their experiences of receiving the Enliven service and suggestions for improvement.</li>
-							<li>Key contacts from DHBs who contract Enliven, the Ministry of Health and Home and Community Health Association and were sought via face-to-face interviews about the Enliven service and reporting requirements.</li>
-							<li>The Enliven Quality Committee were surveyed via a focus group to gain their insights into current data collection practices, suggestions for additional data collection and potential changes to service delivery in response to changing client needs.</li>
-							<li> New client satisfaction surveys were designed and piloted in telephone interviews with a selection of Enliven Home-based support clients.</li>
-						</ul>
-						<p> The results from all key stakeholder groups were used to inform the development and utilisation of a newly created RBA framework for ongoing use.</p>
-					</div>
-					<div class="article">
+					</p>
+
+					<p>Impact Research NZ was commissioned by Presbyterian Support Northern to conduct a refresh of its current RBA framework
+						for the Enliven Home-Based Support service. The purpose of this project was to evaluate the perspectives’ of key stakeholder
+						groups to inform the development and utilisation of a new RBA framework for future use.
+					</p>
+					<p>Enliven provides a range of home-based support services to clients who, as a result of aging or disability, are unable
+						to carry out day to day tasks around the home. The focus of the service is to assist clients to remain healthy, maximise
+						their independence and engage with their community. Clients are supported to achieve their own goals, receive help
+						with personal care and household tasks.
+					</p>
+					<p>Data was collected from the following groups: Representatives from the Ministry of Health, Home and Community Health
+						Association, DHBs that Enliven contracts to, Enliven clients, staff and management.
+					</p>
+
+					<ul>
+						<li>A document review was used to inform questions for interviews and surveys with key stakeholder groups.</li>
+						<li>A selected group of Enliven clients were surveyed via telephone interviews about their experiences of receiving the
+							Enliven service and suggestions for improvement.</li>
+						<li>Key contacts from DHBs who contract Enliven, the Ministry of Health and Home and Community Health Association and were
+							sought via face-to-face interviews about the Enliven service and reporting requirements.</li>
+						<li>The Enliven Quality Committee were surveyed via a focus group to gain their insights into current data collection practices,
+							suggestions for additional data collection and potential changes to service delivery in response to changing client
+							needs.</li>
+						<li>
+							New client satisfaction surveys were designed and piloted in telephone interviews with a selection of Enliven Home-based
+							support clients.
+						</li>
+					</ul>
+					<p>
+						The results from all key stakeholder groups were used to inform the development and utilisation of a newly created RBA framework
+						for ongoing use.
+					</p>
+
+					<span class="anchor" id="art4"></span>
+					<p style="color: #00b1b0">
 						<strong>
 							Enliven Bay of Plenty Home - Based Support Establishment with the Disabilities Resource Centre - 2017
 						</strong>
-						<p>Impact Research NZ was commissioned by Presbyterian Support Northern (PSN) to design and develop a Results Based Accountability framework for future evaluation in response to the partnership of Enliven Bay of Plenty (BOP) with the Disability Resource Centre (DRC).</p>
-						<p>The perspectives of all key stakeholder groups were gathered through a series of interviews and focus groups to inform the RBA framework and toolkit.</p>
-						<p>Data was collected from the following groups: Representatives from the Ministry of Health, Home and Community Health Association, DHBs that Enliven contracts to, Enliven clients, staff and management and DRC staff and management.</p>
-						<ul>
-							<li>Key contacts from the Ministry of Health and the Bay of Plenty DHB were surveyed via face-to-face interviews about the Enliven service and reporting requirements.</li>
-							<li>The Enliven Quality Committee were surveyed via a focus group to gain their insights into current data collection practices, suggestions for additional data collection and potential changes to service delivery in response to changing client needs.</li>
-							<li>A focus group was conducted with DRC staff and a face-to-face interview is to be conducted with a key contact from the DRC.</li>
-							<li>Survey instruments were designed and delivered via online surveys with Enliven and DRC staff.</li>
-						</ul>
-						<p>The results from all key stakeholder groups were used to inform the development and utilisation of a newly created RBA framework and toolkit for ongoing use by Enliven BOP and DRC.</p>
-					</div>
-					<div class="article">
+					</p>
+
+					<p>Impact Research NZ was commissioned by Presbyterian Support Northern (PSN) to design and develop a Results Based Accountability
+						framework for future evaluation in response to the partnership of Enliven Bay of Plenty (BOP) with the Disability Resource
+						Centre (DRC).</p>
+					<p>The perspectives of all key stakeholder groups were gathered through a series of interviews and focus groups to inform
+						the RBA framework and toolkit.</p>
+					<p>Data was collected from the following groups: Representatives from the Ministry of Health, Home and Community Health
+						Association, DHBs that Enliven contracts to, Enliven clients, staff and management and DRC staff and management.</p>
+					<ul>
+						<li>Key contacts from the Ministry of Health and the Bay of Plenty DHB were surveyed via face-to-face interviews about
+							the Enliven service and reporting requirements.</li>
+						<li>The Enliven Quality Committee were surveyed via a focus group to gain their insights into current data collection practices,
+							suggestions for additional data collection and potential changes to service delivery in response to changing client
+							needs.</li>
+						<li>A focus group was conducted with DRC staff and a face-to-face interview is to be conducted with a key contact from
+							the DRC.</li>
+						<li>Survey instruments were designed and delivered via online surveys with Enliven and DRC staff.
+						</li>
+					</ul>
+					<p>The results from all key stakeholder groups were used to inform the development and utilisation of a newly created RBA
+						framework and toolkit for ongoing use by Enliven BOP and DRC.</p>
+
+					<span class="anchor" id="art5"></span>
+					<p style="color: #00b1b0">
 						<strong>
 							Lifeline RBA Evaluation - 2017
 						</strong>
-						<p>Impact Research NZ was commissioned by Presbyterian Support Northern (PSN) to review their existing documents and processes and to pilot and establish a RBA framework for the 24/7 and Suicide Crisis (Tautoko) helplines.</p>
-						<p>The main areas of interest were: The quality factors of a helpline and the indicators of the service that were helpful to callers.</p>
-						<ul>
-							<li>Data was collected via a document review.</li>
-							<li>A RBA framework and workshop was held with the CEO of PSN and Lifeline’s Executive Director.</li>
-							<li>Focus groups with Lifeline staff and volunteers in Auckland and Christchurch were conducted to gain their perspectives around current data collection practices and suggestions for future data collection.</li>
-							<li>A face-to-face interview was conducted with a member of Lifeline’s management for additional context.</li>
-							<li>Survey instruments were piloted to evaluate the effectiveness of the 24/7 and Suicide Crisis Helpline (Tautoko) from the perspectives of callers.</li>
-						</ul>
-						<p>An overall report provided a high level synthesis of key findings from all stakeholder groups to inform the future direction of Lifeline, its processes and services for callers. The newly created RBA framework and toolkit enabled Lifeline to conduct future evaluations of the 24/7 and Suicide Crisis (Tautoko) helplines from the perspectives’ of callers.</p>
-					</div>
-					<div class="article">
+					</p>
+
+					<p>Impact Research NZ was commissioned by Presbyterian Support Northern (PSN) to review their existing documents and processes
+						and to pilot and establish a RBA framework for the 24/7 and Suicide Crisis (Tautoko) helplines.</p>
+					<p>The main areas of interest were: The quality factors of a helpline and the indicators of the service that were helpful
+						to callers.</p>
+					<ul>
+						<li>Data was collected via a document review.</li>
+						<li>A RBA framework and workshop was held with the CEO of PSN and Lifeline’s Executive Director.
+						</li>
+						<li>Focus groups with Lifeline staff and volunteers in Auckland and Christchurch were conducted to gain their perspectives
+							around current data collection practices and suggestions for future data collection.</li>
+						<li>A face-to-face interview was conducted with a member of Lifeline’s management for additional context.</li>
+						<li>Survey instruments were piloted to evaluate the effectiveness of the 24/7 and Suicide Crisis Helpline (Tautoko) from
+							the perspectives of callers.</li>
+					</ul>
+
+					<p>An overall report provided a high level synthesis of key findings from all stakeholder groups to inform the future direction
+						of Lifeline, its processes and services for callers. The newly created RBA framework and toolkit enabled Lifeline to
+						conduct future evaluations of the 24/7 and Suicide Crisis (Tautoko) helplines from the perspectives’ of callers.</p>
+
+					<span class="anchor" id="art6"></span>
+					<p style="color: #00b1b0">
 						<strong>
 							A Women’s Refuge Trust - 2017
 						</strong>
-						<p>Impact Research NZ was commissioned by the Trust to review their existing documents and develop and trial a new RBA framework for the ongoing evaluation of the support that it provides and to inform the Trust’s future strategic direction.</p>
-						<p>The Trust provides support to women and their children who have previously or are currently experiencing the effects of family violence. Activities include the provision of residential or community-based support, advocacy and advice, education, safety plans and community-based awareness of the effects and prevention of domestic violence.</p>
-						<ul>
-							<li>Data was collected via a document review.</li>
-							<li>RBA surveys were developed and piloted with: 
-								<ul>
-									<li>Six current and past community outreach and refuge clients to elicit their opinions and experiences of the support received from the Trust and suggestions for potential service improvements.</li>
-									<li>Four members of Trust staff to gain their understanding of their role and opinions of the effectiveness of the Trust for women and children that they support.</li>
-									<li>Six members of the Board of Trustees for their opinions regarding the effectiveness of the support that the Trust provides.</li>
-									<li>Twenty-three key contacts from agencies and community organisations that have involvement with the Trust to gain an understanding of their satisfaction with their organisation’s relationship with the Trust and potential service improvements.</li>
-								</ul>
-							</li>
-						</ul>
-						<p>The results from all key stakeholder groups and workshops with Trust staff were used to inform the development and utilisation of a newly created RBA framework for ongoing use. A RBA manual was prepared and provided to KTAT to enable them to evaluate their services and programmes in the future.</p>
-					</div>
-					<div class="article">
+					</p>
+
+					<p>Impact Research NZ was commissioned by the Trust to review their existing documents and develop and trial a new RBA
+						framework for the ongoing evaluation of the support that it provides and to inform the Trust’s future strategic direction.</p>
+
+					<p>The Trust provides support to women and their children who have previously or are currently experiencing the effects
+						of family violence. Activities include the provision of residential or community-based support, advocacy and advice,
+						education, safety plans and community-based awareness of the effects and prevention of domestic violence.</p>
+
+					<ul>
+						<li>Data was collected via a document review.</li>
+						<li>RBA surveys were developed and piloted with:
+							<ul>
+								<li>Six current and past community outreach and refuge clients to elicit their opinions and experiences of the support
+									received from the Trust and suggestions for potential service improvements.</li>
+								<li>Four members of Trust staff to gain their understanding of their role and opinions of the effectiveness of the Trust
+									for women and children that they support.</li>
+								<li>Six members of the Board of Trustees for their opinions regarding the effectiveness of the support that the Trust
+									provides.</li>
+								<li>Twenty-three key contacts from agencies and community organisations that have involvement with the Trust to gain
+									an understanding of their satisfaction with their organisation’s relationship with the Trust and potential service
+									improvements.</li>
+							</ul>
+						</li>
+					</ul>
+
+					<p>
+						The results from all key stakeholder groups and workshops with Trust staff were used to inform the development and utilisation
+						of a newly created RBA framework for ongoing use. A RBA manual was prepared and provided to KTAT to enable them to
+						evaluate their services and programmes in the future.
+					</p>
+
+
+					<span class="anchor" id="art7"></span>
+					<p style="color: #00b1b0">
 						<strong>
 							SHINE in School programme - 2017
 						</strong>
-						<p>Impact Research NZ was commissioned by Shine, a division of Presbyterian Support Northern (PSN) to review their existing documents and evaluation processes as well as to develop and trial a new RBA framework and to undertake an evaluation of their SHINE in School programme.</p>
-						<p>The SHINE in School programme is currently delivered to students in years nine to 13 in a total of 14 secondary schools and youth alternative education providers in the Auckland region by a team of three educators. Presentations may be held during school assemblies and students are also able to engage in workshops which provide them with information aimed at increasing their understanding around healthy relationship and the effects of family violence. Student leaders are supported to organise community-based events aimed at raising awareness among a wider audience and act as advocates for peers experiencing family violence.</p>
-						<ul>
-							<li>Data was collected via a document review.</li>
-							<li>Three online RBA surveys were developed and trialled with:
-								<ul>
-									<li>Twenty-seven students who had participated in the SHINE in School programme to gain their experiences of the programme and suggestions for potential programme improvements.</li>
-									<li>Three school staff who had been involved with the SHINE in School programme to gain their opinions if its effectiveness for students in their school.</li>
-									<li>Four key contacts of community groups that had been involved with SHINE in School programme events to gain their opinions of the relevance and effectiveness of events for raising public awareness of community-based support services</li>
-								</ul>
-							</li>
-							<li>Face-to-face interviews were conducted with three members of Shine management and two educators to gain their opinions of the effectiveness of the SHINE in School programme and the processes currently utilised to deliver and evaluate the programme.</li>
-							<li>A face-to-face interview was conducted with a member of PSN management for additional context.</li>
-						</ul>
-						<p> An overall report provided a high level synthesis of key findings from all stakeholder groups to inform the future direction and processes of the SHINE in School programme. The newly created RBA framework and RBA manual was prepared and provided to Shine to enable the SHINE in School programme to be evaluated in the future. An RBA workshop was conducted with nominated Shine staff members to further inform them of the processes involved in conducting RBA evaluations.</p>
-					</div>
-					<h2>2016</h2>
-					<div class="article">
-						<strong>
-							Kia Piki ai te Oranga a Nga Whānau me Nga Hapū
+					</p>
+
+					<p>Impact Research NZ was commissioned by Shine, a division of Presbyterian Support Northern (PSN) to review their existing
+						documents and evaluation processes as well as to develop and trial a new RBA framework and to undertake an evaluation
+						of their SHINE in School programme.</p>
+
+
+					<p>The SHINE in School programme is currently delivered to students in years nine to 13 in a total of 14 secondary schools
+						and youth alternative education providers in the Auckland region by a team of three educators. Presentations may be
+						held during school assemblies and students are also able to engage in workshops which provide them with information
+						aimed at increasing their understanding around healthy relationship and the effects of family violence. Student leaders
+						are supported to organise community-based events aimed at raising awareness among a wider audience and act as advocates
+						for peers experiencing family violence.</p>
+
+					<ul>
+						<li>Data was collected via a document review.</li>
+						<li>Three online RBA surveys were developed and trialled with:
+							<ul>
+								<li>Twenty-seven students who had participated in the SHINE in School programme to gain their experiences of the programme
+									and suggestions for potential programme improvements.
+								</li>
+								<li>Three school staff who had been involved with the SHINE in School programme to gain their opinions if its effectiveness
+									for students in their school.</li>
+								<li>Four key contacts of community groups that had been involved with SHINE in School programme events to gain their
+									opinions of the relevance and effectiveness of events for raising public awareness of community-based support services</li>
+							</ul>
+						</li>
+
+						<li>Face-to-face interviews were conducted with three members of Shine management and two educators to gain their opinions
+							of the effectiveness of the SHINE in School programme and the processes currently utilised to deliver and evaluate
+							the programme.</li>
+						<li>A face-to-face interview was conducted with a member of PSN management for additional context.</li>
+					</ul>
+
+					<p>
+						An overall report provided a high level synthesis of key findings from all stakeholder groups to inform the future direction
+						and processes of the SHINE in School programme. The newly created RBA framework and RBA manual was prepared and provided
+						to Shine to enable the SHINE in School programme to be evaluated in the future. An RBA workshop was conducted with
+						nominated Shine staff members to further inform them of the processes involved in conducting RBA evaluations.
+					</p>
+
+
+
+
+
+
+
+					<!-- ENDED**** -->
+					<span class="anchor" id="art8"></span>
+					<p style="color: #00b1b0">
+						<strong>Kia Piki ai te Oranga a Nga Whānau me Nga Hapū
+							<br>
+							<em>2016</em>
 						</strong>
-						<p>Impact Research NZ worked in collaboration with Shea Pita who were commissioned by The Ministry of Health to provide a series of reports to inform the Kia Piki te Ora Māori suicide prevention post evaluation programme in Aotearoa New Zealand communities.</p>
-						<p> The first report presented a literature review to understand the context of Māori suicide by analysing available Māori suicide data, understanding the diverse causes of suicide for Māori, the current health policy framework underpinning New Zealand’s response to Māori suicide prevention and an understanding of effective interventions. The second report involved presenting a landscape review and comparative analysis of relevant strategies, programmes or initiatives that may impact upon the Māori suicide prevention landscape.</p>
-						<p> The third report involved outlining a draft model to support outcomes-focused Māori community leadership in suicide prevention.</p>
-						<p><em>Weir, A., McEwan B., & Shea, S. (2016) Understanding the drivers, impact and ‘what works’ for Māori suicide prevention within Aotearoa New Zealand communities. Wellington: Ministry of Health </em></p>
-						<p><em>Shea, S., & Weir, A. (2016). A landscape and comparative analysis of Māori suicide prevention within Aotearoa, New Zealand. Wellington: Ministry of Health.</em></p>
-						<p><em>Shea, S., & Weir, A. (2016). Kia Piki ai te Oranga a Nga Whānau me Nga Hapū : A draft model to support Māori communities to lead outcomes-focused suicide prevention, within the overall context of Community Wellbeing. Wellington: Ministry of Health.</em></p>
-					</div>
-					<div class="article">
-						<strong>
-							The Royal New Zealand Plunket Society – Family Works Northern research on the joint Early Intervention Service
+					</p>
+					<p>Impact Research NZ worked in collaboration with Shea Pita who were commissioned by The Ministry of Health to provide
+						a series of reports to inform the Kia Piki te Ora Māori suicide prevention post evaluation programme in Aotearoa New
+						Zealand communities.
+						<br> The first report presented a literature review to understand the context of Māori suicide by analysing available Māori
+						suicide data, understanding the diverse causes of suicide for Māori, the current health policy framework underpinning
+						New Zealand’s response to Māori suicide prevention and an understanding of effective interventions. The second report
+						involved presenting a landscape review and comparative analysis of relevant strategies, programmes or initiatives that
+						may impact upon the Māori suicide prevention landscape.
+						<br> The third report involved outlining a draft model to support outcomes-focused Māori community leadership in suicide
+						prevention.</p>
+
+					<p style="font-style: italic;">Weir, A., McEwan B., &amp; Shea, S. (2016) Understanding the drivers, impact and ‘what works’ for Māori suicide prevention
+						within Aotearoa New Zealand communities. Wellington: Ministry of Health
+						<br> Shea, S., &amp; Weir, A. (2016). A landscape and comparative analysis of Māori suicide prevention within Aotearoa,
+						New Zealand. Wellington: Ministry of Health.
+						<br> Shea, S., &amp; Weir, A. (2016). Kia Piki ai te Oranga a Nga Whānau me Nga Hapū : A draft model to support Māori communities
+						to lead outcomes-focused suicide prevention, within the overall context of Community Wellbeing. Wellington: Ministry
+						of Health.</p>
+
+
+					<span class="anchor" id="art9"></span>	
+					<p style="color: #00b1b0">
+						<strong>The Royal New Zealand Plunket Society – Family Works Northern research on the joint Early Intervention Service
+							<br>
+							<em>2016</em>
 						</strong>
-						<p>The Royal New Zealand Plunket Society and Family Works Northern collaborated together to provide a short-term early intervention service. Impact Research NZ was commissioned to provide an evaluation of the effectiveness of a newly established Early Intervention Service in the Waikato area. Clients of the service participated in interviews to establish how well they thought the service met their needs, the positive outcomes experienced as a result of their engagement and suggestions for service improvements. Staff of Plunket and Family Works Northern participated in an online survey which asked them to indicate opinions relating to the success and strengths of the service and the importance of aspects of service delivery that contributed to its success. Staff were also asked for their suggestions for service improvements. An evaluation report presented the findings from the client interviews and staff online surveys to provide an insight into the ways in which the service was appropriately provided to clients and the extent to which the service provided the desired and intended outcomes for clients.</p>
-						<p><em>Weir, A., Holmes, J. (2015). Evaluation of the Royal New Zealand Plunket Society-Family Works Northern Huntly Early Intervention Service 2015. Impact Research NZ, Auckland.</em></p>
-					</div>
-				</div> <!-- end of content -->
-			</div> <!-- end of main -->
-		</div> <!-- end of container -->
-	</div> <!-- end of main-body -->
+					</p>
+
+					<p>The Royal New Zealand Plunket Society and Family Works Northern collaborated together to provide a short-term early
+						intervention service. Impact Research NZ was commissioned to provide an evaluation of the effectiveness of a newly
+						established Early Intervention Service in the Waikato area. Clients of the service participated in interviews to establish
+						how well they thought the service met their needs, the positive outcomes experienced as a result of their engagement
+						and suggestions for service improvements. Staff of Plunket and Family Works Northern participated in an online survey
+						which asked them to indicate opinions relating to the success and strengths of the service and the importance of aspects
+						of service delivery that contributed to its success. Staff were also asked for their suggestions for service improvements.
+						An evaluation report presented the findings from the client interviews and staff online surveys to provide an insight
+						into the ways in which the service was appropriately provided to clients and the extent to which the service provided
+						the desired and intended outcomes for clients.</p>
+
+					<p style="font-style: italic;">Weir, A., Holmes, J. (2015). Evaluation of the Royal New Zealand Plunket Society-Family Works Northern Huntly Early
+						Intervention Service 2015. Impact Research NZ, Auckland.</p>
+
+
+					<span class="anchor" id="art10"></span>
+					<p style="color: #00b1b0">
+						<strong>START Taranaki Results Based Accountability (RBA) Evaluation
+							<br>
+							<em>2016</em>
+						</strong>
+					</p>
+
+					<p>START Taranaki commissioned Impact Research NZ to work with them to undertake and organisation review of their evaluation
+						and reporting practices as well as to develop and implement a Results Based Accountability (RBA) framework. The project
+						also involved providing START Taranaki staff with training in RBA, linking the strategic and operational plans to an
+						organisational evaluation plan.
+						<br> Three groups of stakeholders were surveyed utilising an RBA surveys. The perspectives of youth were surveyed via a
+						focus group and a paper-based survey. Youth were asked about their expectations and experiences of the programme, their
+						relationship with their key worker, and suggestions for potential programme improvements. Youth were also asked whether
+						they had changed as a result of being on the programme, if they had developed new skills and coping strategies and
+						if they would change their behaviour in the future.
+						<br> Individual interviews and focus groups with staff and management of START Taranaki asked about their perceptions of
+						the START Taranaki organisation, and the programme fit with other available programmes. Key stakeholders were asked
+						for their perceptions of the underlying philosophy of START Taranaki and the benefits of their organisations’ relationship
+						with the programme.
+						<br> An overall evaluation report outlined stakeholders’ perceptions of the effectiveness of the START Taranaki programme,
+						the extent to which it met its intended outcomes and suggestions for ways in which the programme could be improved.
+						A Results Based Accountability manual was also created to enable START Taranaki to continue to evaluate the programme
+						and monitor its success for themselves.
+						<br>
+
+					</p>
+					<p style="font-style:italic;">Weir, A., McEwan, B., &amp; Holmes, J. (2016). START Taranaki Results Based Accountability (RBA) Survey Report. Impact
+						Research NZ, Auckland.</p>
+
+					<span class="anchor" id="art11"></span>
+					<p style="color: #00b1b0">
+						<strong>Family Works Resolution Service RBA Evaluation
+							<br>
+							<em>2016</em>
+						</strong>
+					</p>
+
+					<p>Impact Research NZ was commissioned by Family Works Resolution Service to undertake and evaluation of its service by
+						asking clients to participate in a paper-based or online survey which asked them to indicate how well they believed
+						the service met their expectations, and how effective it was in assisting them to reach a lasting arrangement for their
+						care of their children. A total of 77 clients responded and a report of the survey. Findings will provide details of
+						client demographics and level of their involvement with the service. In addition clients’ experiences of the service,
+						the benefits to clients and their children of their involvement and suggestions for improvements to the service will
+						also be presented.</p>
+
+					<p style="font-style: italic;">Weir, A., &amp; Holmes, J. (2016). Family Works Resolution Service: Results Based Accountability Survey Report 2016.
+						Impact Research NZ, Auckland.</p>
+
+
+					<span class="anchor" id="art12"></span>	
+					<p style="color: #00b1b0">
+						<strong>Enliven Home Based Support Results Based Accountability (RBA) Evaluation
+							<br>
+							<em>2016</em>
+						</strong>
+					</p>
+
+					<p>Presbyterian Support Northern (PSN) commissioned Impact Research NZ to undertake an evaluation of the Enliven Home Based
+						Support service. In 2016, 370 clients responded to a paper-based survey. Questions asked clients to indicate how effectively
+						the service met their needs and situations, the positive benefits experienced as a result of their involvement with
+						the service and suggestions for service improvements. Six Enliven sites each received a report outlining their regional
+						results and one overall evaluation report which provided information on the effectiveness of the Enliven Home Based
+						Support service, the extent to which the service met its intended outcomes and the positive benefits that clients experienced
+						as a result of their involvement as well as suggestions for ways in which the service could be improved.</p>
+					<p style="font-style: italic;">Weir, A., &amp; Holmes J. (2016). Enliven: Results Based Accountability Survey 10 Service Report 2016. Impact Research
+						NZ, Auckland.</p>
+
+					<span class="anchor" id="art13"></span>
+					<p style="color: #00b1b0">
+						<strong>Social Workers in Schools (SWiS) RBA Evaluation
+							<br>
+							<em>2016</em>
+						</strong>
+					</p>
+
+					<p>Presbyterian Support Northern (PSN) commissioned Impact Research NZ to undertake the Social Workers in Schools (SWiS)
+						RBA Evaluation. At the time of the survey a total of 126 schools based in the upper North Island were eligible to participate.
+						There were795 children involved with the service which was delivered by 65 social workers. Children and their parents
+						and caregivers were provided with a paper-based questionnaire to complete and members of school staff responded to
+						an online survey. Questions asked each group to indicate how effective they thought the service was, what the benefits
+						of being involved with the service were for children, parents and caregivers and school staff and suggestions for ways
+						in which the service could be improved. In 2016 responses were provided by more than 440 people surveyed. Eight PSN
+						sites each received a report outlining their regional results to present to the schools in their area. One overall
+						service evaluation report provided information on the effectiveness of the SWiS service, the extent to which it met
+						its intended outcomes and clients’ suggestions for improvements to the service.</p>
+					<p style="font-style: italic;">Weir, A., Holmes, J., &amp; Schonberger, S. (2016). </p>
+
+					<span class="anchor" id="art14"></span>
+					<p style="color: #00b1b0">
+						<strong>Family Works Resolution Service RBA Evaluation
+							<br>
+							<em>2016</em>
+						</strong>
+					</p>
+					<p>Family Works Northern and Anglican Trust for Women and Children Youth Workers in Secondary Schools (YWiSS) Check and
+						Connect Service, Results Based Accountability (RBA) Pilot Survey (2015)</p>
+
+					<p>The Youth Workers in Secondary Schools (YWiSS) Check and Connect service is jointly provided by the Anglican Trust for
+						Women and Children (ATWC) and Presbyterian Support Northern/Family Works Northern (PSN/FWN). Impact Research NZ was
+						commissioned to develop an RBA framework to evaluate the effectiveness of the YWiSS Check and Connect Service and its
+						intended programme outcomes. Four groups of stakeholders were invited to participate in an online survey. Youth involved
+						with the service, and their parents and caregivers were surveyed for their perspectives on how well the service was
+						received, the impact of engagement for youth and suggestions for improvement to the service. Staff from seven schools
+						in the Auckland area were surveyed for their perceptions of the YWiSS Check and Connect service and its impact on their
+						roles within the schools.</p>
+
+					<p>YWiSS Check and Connect staff and members of management were also sought and questions included perceptions of the service,
+						their roles and relationships with youth, parents and caregivers and school staff. A total of 73 responses were received
+						and an evaluation report was provided which presented the results of all surveys. The development of the RBA framework
+						and associated questions, agreed in consultation with ATWC and FWN were demonstrated to provide measurable data which
+						assisted in the evaluation of the ability of the YWiSS Check and Connect service to achieve its goals and meet the
+						needs and provide positive outcomes for clients. This approach also enabled an evaluation of clients suggestions to
+						inform future service improvements.</p>
+
+
+					<p style="font-style: italic;">Weir, A., Holmes, J. (2015). Family Works Northern and Anglican Trust for Women and Children Youth Workers in Secondary
+						Schools (YWiSS) Check and Connect Service, Results Based Accountability (RBA) Pilot Survey Overall Service Report 2015.
+						Impact Research NZ, Auckland.</p>
+
+					<span class="anchor" id="art15"></span>
+					<p style="color: #00b1b0">
+						<strong>Family Works Northern Results Based Accountability (RBA) Casework Evaluation Client Survey Report
+							<br>
+							<em>2016</em>
+						</strong>
+					</p>
+
+					<p>Impact Research NZ was commissioned by Family Works Northern to undertake an evaluation of their Family Works Northern
+						Casework service, which provides support to individual clients and families/whānau through the provision of social
+						work and family counselling. In 2016 a mailing house was trialled to invite the three stakeholders groups to participate
+						in a client survey. Children aged 7-12 years were surveyed regarding their happiness, experience of school, problems,
+						safety, ability to manage challenges, knowledge of where to obtain help and opinion of their Family Worker. Adult and
+						youth clients were surveyed regarding their experiences with the service, the degree to which the service had helped
+						them or their family/whānau and suggestions for improvement to the service. A total of 178 client responses were received
+						and the results of all surveys were evaluated and compiled into a report. The RBA evaluation provided measurable data
+						on the effectiveness of the Family Works Northern Casework service at meeting the needs of clients and producing positive
+						outcomes. The evaluation also incorporated client suggestions for improvements to the service. The trial of the mailing
+						house resulting in fewer responses than previous methods of survey delivery.</p>
+
+					<p style="font-style: italic;">Weir, A., &amp; Holmes, J. (2016). Family Works Northern Results Based Accountability (RBA) Casework Evaluation Client
+						Survey Report 2016. Impact Research NZ, Auckland.</p>
+
+					<h2>Other Projects</h2>
+
+					<span class="anchor" id="art16"></span>
+					<p style="color: #00b1b0">
+						<strong>Family Works Resolution Service: Results Based Accountability Pilot
+							<br>
+							<em>2015</em>
+						</strong>
+					</p>
+					<p>Impact Research NZ was contracted by Family Works Resolution Service to develop, trial and evaluate a survey mechanism
+						to gain evaluative feedback about the provision of Family Works Resolution Service. A combination of survey and interview
+						data is being collected from Family Works Resolution Service clients, utilising a Results Based Accountability (RBA)
+						approach.
+						<br> In addition, survey and interview data is also being collected from key stakeholders, including call centre staff,
+						contracted mediators and preparatory counsellors, and managerial personnel. The client survey mechanism is aligned
+						with the Ministry of Justice and Family Works Resolution Service’s Key Performance Indicator (KPI) requirements, as
+						part of monitoring and reporting on the provision of services, including the production of management and funder reports.
+						KPI and RBA reporting, when combined, will form a comprehensive evaluative framework.</p>
+
+					<span class="anchor" id="art17"></span>
+					<p style="color: #00b1b0">
+						<strong>Developing NGO Capacity to Undertake Evaluation
+							<br>2015 – Current</strong>
+					</p>
+					<p>Impact Research NZ has been working with a large NGO (that offers a broad range of social services for families in South
+						Auckland) to undertake an organisational review of their tools used to evaluate their programme and services. Workshops
+						have been conducted on developing an organisation and programme evaluation plans linked to their Annual Plan and Strategic
+						Plan. Other workshops focused on developing and implementing RBA and innovative models of evaluations. The NGO was
+						also interested in its organisational responsiveness to Maori and Pasifika and both hui and fono were held facilitated
+						by Impact Research NZ and reports provided to the NGO for follow-up.</p>
+
+
+					<span class="anchor" id="art18"></span>
+					<p style="color: #00b1b0">
+						<strong>Community Initiative – Process Evaluation
+							<br>
+							<em>2015</em>
+						</strong>
+					</p>
+					<p>Impact Research NZ, in partnership with David Turner Research Ltd, undertook a process evaluation of a community initiative
+						pilot project funded by MSD currently being trailed in two Auckland districts: Manukau and Waitakere. The pilot project
+						is targeted to assist low income individuals and families to improve their circumstances. A process evaluation assesses
+						whether a program suits the context for which it was designed, if it has been appropriately implemented, and if it
+						has reached those persons for whom it would provide the most benefit.</p>
+
+					<p>The evaluation methodology utilises a combination of interviews and document analysis to achieve the evaluation objective.
+						The evaluation focuses on the quality and quantity of services delivered through the programme, both from a programme
+						perspective and from the client perspective. The process evaluation was based on the programme’s intervention logic,
+						which describes the problem to be addressed as well as identifying programme inputs, outputs, and intended outcomes.
+						The evaluation l was used to inform future ongoing monitoring of the programme.</p>
+
+					<p style="font-style: italic;">Turner, D., Weir, A., McEwan, B., &amp; Holmes, J. (2015). Community Finance Pilot: Process Evaluation 2015. Ministry
+						of Social Development: Wellington.</p>
+
+					<span class="anchor" id="art19"></span>
+					<p style="color: #00b1b0">
+						<strong>Social Workers in Schools RBA Evaluation
+							<br>
+							<em>2015</em>
+						</strong>
+					</p>
+					<p>Presbyterian Support Northern commissioned Impact Research NZ to undertake the Social Workers in Schools (SWiS) RBA
+						Evaluation. 126 schools in the upper North Island participated in the survey. The number of SWiS in schools = 71. The
+						number of children in SWiS service = 1653. In 2015 the service evaluation included responses from more than 650 responses.
+						Children and their parents/caregivers participated in a paper-based survey and the school staff in an online survey
+						designed to find out how well the service is doing, suggestions for improvements and what are the outcomes of the service
+						for children, their parents/caregivers and the school staff. The ten regional sites each received a report to share
+						with their schools and an overall report provides information on how well the services is doing in reaching its intended
+						outcomes and what services improvements are to be made.</p>
+
+					<span class="anchor" id="art20"></span>
+					<p style="color: #00b1b0">
+						<strong>Family Works New Zealand RBA Pilot Survey
+							<br>
+							<em>2014/15</em>
+						</strong>
+					</p>
+					<p>The Ministry of Social Development funded the establishment of a common outcome measurement framework, including conducting
+						a baseline RBA pilot survey of clients, across seven Presbyterian Support regions throughout New Zealand. Impact Research
+						NZ was commissioned to undertake the development and implementation of the RBA pilot surveys of children, youth and
+						their parents/ caregivers. The development of the survey instruments was done in collaboration with the seven regions.
+						Each region received a report on their survey findings including client demographics, quantitative and qualitative
+						data, as well as an overall report looking at the Family Works NZ service RBA survey results as a whole.</p>
+
+					<span class="anchor" id="art21"></span>
+					<p style="color: #00b1b0">
+						<strong>An External Review of the Response Made by The Salvation Army to the two Canterbury Earthquakes of September 2010 and
+							February 2011
+							<br>
+							<em>2014</em>
+						</strong>
+					</p>
+					<p>Impact Research NZ was commissioned by The Salvation Army to undertake an external review of its response to the two
+						Christchurch earthquakes of September 2010 and February 2011; with the aim of discovering what could be done to ensure
+						that The Salvation Army’s response to future disasters was appropriate, effective and consistent with its Mission Statement.
+						The researchers worked in collaboration with senior Salvation Army staff to formulate the overall research design,
+						and to identify the necessary research documentation and interview participants. A literature review was undertaken
+						to identify key research findings in relationship to best-practice disaster management.</p>
+
+					<p>The research project undertook two stages of data collection. In stage one, a document review and analysis was undertaken
+						assessing a range of earthquake-response documents including: Salvation Army-based daily field reports, email communications
+						between staff, quarterly and annual Board reports, financial reports related to earthquake fundraising and expenditure,
+						website press releases, and two low-level review reports completed by the Emergency Services. In stage two, a mixture
+						of face-to-face and telephone interviews were undertaken with senior Salvation Army staff; and key informants selected
+						from government, local government and NGO personnel involved in the Canterbury earthquakes. </p>
+
+					<p>The research findings, in conjunction with the ‘best practice’ disaster-response research literature, identified a number
+						of organisational opportunities for The Salvation Army to consider when reviewing its Disaster Response Policies, Protocols
+						and Practices.</p>
+
+
+					<br>
+					<h2 class="articlehead">Previous</h2>
+
+
+					<span class="anchor" id="art22"></span>
+					<p>
+						<strong>
+							<a href="/images/docs/IRNZ-recent-projects-summary-June-2015.pdf" target="_blank">A selection of Impact Research NZ Research and Evaluation Project Summaries
+								<br>
+							</a>
+						</strong>
+						<em>2014 - Current</em>
+					</p>
+					<p>Impact Research NZ has been contracted by Family Works Resolution Service to develop, trial and evaluate a survey mechanism
+						to gain evaluative feedback about the provision of Family Works Resolution Service. A combination of survey and interview
+						data is being collected from Family Works Resolution Service clients, utilising a Results Based Accountability
+						<br>
+						<a class="btn btn-mini" href="/images/docs/IRNZ-recent-projects-summary-June-2015.pdf" target="_blank">Read more</a>
+						<br>
+						<a href="/images/docs/IRNZ-recent-projects-summary-June-2015.pdf" target="_blank"></a>
+					</p>
+
+
+					<span class="anchor" id="art23"></span>
+					<p>
+						<strong>
+							<a href="/images/docs/Dementia%20Report%20July%202013.pdf" target="_blank">Effective Client-Focused Dementia Day Programmes in the Community: Improving the quality of life for people living
+								with dementia and their families
+								<br>
+							</a>
+						</strong>
+						<em>2014 - Current</em>
+					</p>
+					<p>This evaluation of day programmes for people living with dementia, aims to identify the elements of an effective client-focussed
+						programme, identify the methods employed by organisations to measure the quality of outcomes of programmes, and lastly
+						to determine the efficacy of the methods adopted.
+						<br>
+						<a class="btn btn-mini" href="/images/docs/Dementia%20Report%20July%202013.pdf" target="_blank">Read more</a>
+						<br>
+						<a href="/images/docs/Intergenerational%20final%20(2).pdf" target="_blank"></a>
+					</p>
+
+					<span class="anchor" id="art24"></span>
+					<p>
+						<strong>
+							<a href="/images/docs/plunket.pdf">The Royal New Zealand Plunket Society - Family Works Northern Results Based Accountability Pilot Evaluation</a>
+							<br>
+						</strong>
+						<em>2014 - Current</em>
+					</p>
+					<p>In Collaboration with the Royal New Zealand Plunket Society and Family Works Northern, Impact Research NZ have designed
+						and implemented an evaluation plan, ultising a Results Based Accountability (RBA) framework, to access the outcomes
+						of an early intervention partnership pilot. This evaluation aligns with finding and recommendation from an earlier
+						evaluation on the pilot service conducted by Impact Research NZ, which identified that the ongoing collection of robust
+						outcomes-focused data would support the success of the service.
+						<br>
+						<a class="btn btn-mini" href="/images/docs/plunket.pdf" target="_blank">Read more</a>
+						<br>
+						<a href="/images/docs/plunket.pdf" target="_blank"></a>
+					</p>
+
+					<span class="anchor" id="art25"></span>
+					<p>
+						<strong>
+							<a href="/images/docs/Dancing%20with%20Data%20Project%20Overview.pdf"> Ⓒ 'Dancing with Data' Programme</a>
+						</strong>
+						<br>
+						<em>2014-2013</em>
+					</p>
+					<p>
+						<span style="line-height: 1.3em;">This practical evaluation programme was offered in partnership with Auckland Communities Foundation and funded by SKYCITY
+							Auckland Community Trust Board. Three cohorts of participants from social service NGOs completed the programme, which
+							comprised three workshops of two hours duration, with an expectation that development activities would be completed
+							between the workshops; an overall commitment of approximately 12 hours over the duration of programme.
+							<br>
+							<a class="btn btn-mini" href="/images/docs/Dancing%20with%20Data%20Project%20Overview.pdf" target="_blank">Read more</a>
+							<br>
+							<a href="/images/docs/Dancing%20with%20Data%20Project%20Overview.pdf" target="_blank"></a>
+						</span>
+					</p>
+
+					<span class="anchor" id="art26"></span>
+					<p>
+						<a href="/images/docs/Weir%20and%20Watts%202013%20RBA%20Article%20Evaluation%20Journal%20of%20Australasia.pdf">
+							<strong>Family Works Northern Results Based Accountability (RBA) Qualitative Analysis of Client Feedback</strong>
+						</a>
+						<br>
+						<em>April 2014 - May 2013</em>
+					</p>
+					<p>
+						<span style="line-height: 1.3em;">Impact Research NZ have were commission in 2013 and 2014 to undertake qualitative thematic analysis on data collected
+							from multiple sites from clients on their experiences and outcomes of engaging with Family Works Northern’s social
+							support services.
+							<br>
+							<a class="btn btn-mini" href="/images/docs/Weir%20and%20Watts%202013%20RBA%20Article%20Evaluation%20Journal%20of%20Australasia.pdf"
+							 target="_blank">Read more</a>
+							<br>
+							<a href="/images/docs/Weir%and%Watts%2013%RBA%Article%Evaluation%Journal%of%Australasia.pdf"></a>
+						</span>
+					</p>
+
+					<span class="anchor" id="art27"></span>
+					<p>
+						<strong style="line-height: 1.3em;">
+							<a href="#">Enliven Stakeholder Survey</a>
+						</strong>
+						<br>
+						<em>March 2014 - March 2013</em>
+					</p>
+					<p>
+						<span style="line-height: 1.3em;">An online survey of stakeholders, including District Health Boards and Needs Assessment Agencies, was designed and
+							conducted on behalf of Enliven in 2013 and 2014. </span>
+						<span style="line-height: 1.3em;">The survey gathered both quantitative and qualitative data in order to gain an understanding of the Enliven service’s
+							performance from the perspective of its stakeholders.</span>
+						<br>
+						<a href="#">
+							<span class="btn btn-mini">Read more</span>
+						</a>
+						<br>
+						<a href="#" target="_blank"></a>
+					</p>
+
+					<span class="anchor" id="art28"></span>
+					<p>
+						<strong style="line-height: 1.3em;">
+							<a href="#">ACC Home and Community Support Services: Initial scoping exercise towards a standardised approach to data collection
+								and client outcomes</a>
+							<br>
+						</strong>
+						<em>December 2013</em>
+					</p>
+					<p>
+						<span style="line-height: 1.3em;">Impact Research NZ was commissioned by ACC Home and Community Services to undertake a scoping exercise in order to
+							determine the how the six lead providers of services currently collect and use client data to support the quality
+							of their service provision. </span>
+						<span style="line-height: 1.3em;">Multiple data collection methods were used to gather data from a range of stakeholders.</span>
+						<br>
+						<a class="btn btn-mini" href="#" target="_blank">Read more</a>
+						<br>
+						<a href="#" target="_blank"></a>
+					</p>
+
+					<span class="anchor" id="art29"></span>
+					<p>
+						<strong style="line-height: 1.3em;">
+							<a href="#">Enliven ACC, Results Based Accountability (RBA) Pilot Evaluation</a>
+							<br>
+						</strong>
+						<em>November 2013</em>
+					</p>
+					<p>
+						<span style="line-height: 1.3em;">This evaluation of Enliven’s home support services for clients of ACC Home and Community Support Services designed
+							an piloted a Results Based Accountability (RBA) survey, in order to measure outcomes of the service.</span>
+						<br>
+						<a class="btn btn-mini" href="#" target="_blank">Read more</a>
+						<br>
+						<a href="#" target="_blank"></a>
+					</p>
+
+					<span class="anchor" id="art30"></span>
+					<p>
+						<strong style="line-height: 1.3em;">
+							<a href="#">Evaluation of the Royal New Zealand Plunket Society–Presbyterian Support Northern Family Works Early Intervention
+								Partnership Pilot</a>
+							<br>
+						</strong>
+						<em>June 2012 - November 2013</em>
+					</p>
+					<p>
+						<span style="line-height: 1.3em;">The Royal New Zealand Plunket Society and Family Works Northern collaborated to pilot an innovative model of early
+							intervention social service provision in two areas of high socio-economic over eighteen months. </span>
+						<span style="line-height: 1.3em;">Impact Research NZ was commissioned to conduct an evaluation of the early intervention pilot utilising a participatory
+							approach that engaged key stakeholders and used a range of data sources. The evaluation addressed the effectiveness
+							of the service in terms of meeting its goals and objectives, identified factors that supported effective service delivery,
+							and made recommendations for service delivery going forward.</span>
+						<a class="btn btn-mini" href="#" target="_blank">Read more</a>
+						<br>
+						<a href="#" target="_blank"></a>
+					</p>
+
+					<span class="anchor" id="art31"></span>
+					<p>
+						<strong style="line-height: 1.3em;">
+							<a href="#">Presbyterian Support Northern and the West Fono Health Trust, Waitakere Family Start.Results Based Accountability
+								Pilot Evaluation</a>
+						</strong>
+						<br>
+						<em>October 2013</em>
+					</p>
+					<p>
+						<span style="line-height: 1.3em;">Waitakere Family Start is a collaborative service delivered by West Fono Health Trust and Presbyterian Support Northern.
+							The service supports families/whanau through the early years of a child’s life, with the child at the centre of service
+							delivery. </span>
+						<span style="line-height: 1.3em;">Impact Research NZ conducted a pilot evaluation of the service, utilising two different approaches to the collection
+							of feedback from clients, in order to assess outcomes for clients of the service, and whether there were advantages
+							to either data collection method, in terms of supporting service outcomes and quality.</span>
+						<br>
+						<a class="btn btn-mini" href="#" target="_blank">Read more</a>
+						<br>
+						<a href="#" target="_blank"></a>
+					</p>
+
+					<span class="anchor" id="art32"></span>
+					<p>
+						<strong style="line-height: 1.3em;">
+							<a href="#">Presbyterian Support Northern, Whakamanhia Wahine Tauranga Women’s Programme Evaluation</a>
+							<br>
+						</strong>
+						<em>June 2013 – November 2013</em>
+					</p>
+					<p>
+						<span style="line-height: 1.3em;">Impact Research NZ was commissioned by Presbyterian Support Northern to conduct an evaluation of their pilot programme
+							for women offenders, funded by Department of Corrections as part of their Innovation fund aimed at reducing reoffending.
+							The evaluation aimed to explore how effective the programme was in achieving its intended aims and included reviewing
+							the programme implementation and how well it was received by participants and key stakeholders.</span>
+						<br>
+						<a class="btn btn-mini" href="#" target="_blank">Read more</a>
+						<br>
+						<a href="#" target="_blank"></a>
+					</p>
+
+					<span class="anchor" id="art33"></span>
+					<p>
+						<strong style="line-height: 1.3em;">
+							<a href="#">Family Works Northern Social Workers in Schools (SWiS) Results Based Accountability (RBA) Evaluation</a>
+							<br>
+						</strong>
+						<em>March 2012</em>
+						<br>
+						<a class="btn btn-mini" href="#" target="_blank">Read more</a>
+						<br>
+						<a href="#" target="_blank"></a>
+					</p>
+					<p class="header7">Previous</p>
+
+					<span class="anchor" id="art34"></span>
+					<p>
+						<strong style="line-height: 1.3em;">
+							<a href="/images/docs/Incredible%20Years.pdf" target="_blank">Incredible Years</a>
+						</strong>
+						<br>The goal of Child Youth and Family (CYF) is for children in care to be safe, happy and part of a family. If a child
+						cannot return to their own family, permanent care is required. Care does not always address emotional and behavioural
+						difficulties; this can lead to a cycle of failure and aggression.
+						<a class="btn btn-mini" href="/images/docs/Incredible Years.pdf"
+						 target="_blank">Read more</a>
+						<br>
+						<br>
+						<span class="anchor" id="art35"></span>
+						<a href="/images/docs/Inner%20City%20Connectedness.pdf" target="_blank">
+							<strong>Inner City Interconnectedness</strong>
+						</a>
+						<br> Connectedness refers to the relationships people have with people around them and their surroundings. It includes
+						relationships with family, friends, neighbours and people they have met at clubs or through voluntary work for the
+						community. Connectedness also encompasses the way people feel about the built environment: if there are good services
+						available, if they can walk around their neighbourhood, if the public transport is easy to use and if they feel safe.
+						<a
+						 class="btn btn-mini" href="/images/docs/Inner City Connectedness.pdf" target="_blank">Read more</a>
+							<br>
+							<br>
+							<span class="anchor" id="art36"></span>
+							<a href="/images/docs/Kidpower%20Healthy%20Relationships.pdf" target="_blank">
+								<strong>Kidpower Healthy Relationships</strong>
+							</a>
+							<br>In 2010 Impact Research evaluated the Kidpower, Teenpower, Fullpower, Healthy Relationships programme. The programme
+							provided training in violence prevention, personal safety and self defence. It was designed for all ages and abilities,
+							for individuals, staff and professionals. It included risk reduction and successful communication techniques.
+							<a class="btn btn-mini"
+							 href="/images/docs/Kidpower Healthy Relationships.pdf" target="_blank">Read more</a>
+							<br>
+							<br>
+							<span class="anchor" id="art37"></span>
+							<a href="/images/docs/Kiribati.pdf" target="_blank">
+								<strong>Kiribati – Environmental Migrants</strong>
+							</a>
+							<br> Kiribati (pronounced “Keer-ah-bhass”) comprises three groups of islands in the South West Pacific. The people of
+							Kiribati are not Kiribatese, but I-Kiribati (pronounced “Eee-Keer-ah-bhass”). Kiribati is expected to be the first
+							country in which all land territory disappears due to global climate change. New Zealand has an immigration agreement
+							with the government of Kiribati to relocate the first few environmental refugees.
+							<a class="btn btn-mini" href="/images/docs/Kiribati.pdf"
+							 target="_blank">Read more</a>
+							<br>
+							<br>
+							<span class="anchor" id="art38"></span>
+							<a href="/images/docs/Midlands.pdf" target="_blank">
+								<strong>Midlands - Results Based Assessment</strong>
+							</a>
+							<br>In 2010 Family and Community Services (FACS) commissioned Presbyterian Support Northern to conduct an outcomes-focused
+							evaluation of Midland family and budgeting services. Impact Research (of PSN) conducted a Results Based Assessment
+							(RBA) pilot and recruited 26 providers to complete three RBA surveys over a two year period.
+							<a class="btn btn-mini"
+							 href="/images/docs/Midlands.pdf" target="_blank">Read more</a>
+							<br>
+							<br>
+							<span class="anchor" id="art39"></span>
+							<a href="/images/docs/National%20SWiS.pdf" target="_blank">
+								<strong>National Social Workers in Schools (SWiS)</strong>
+							</a>
+							<br>This one year pilot was commissioned by Child Youth and Family (CYF) to evaluate the effectiveness of a Results Based
+							Assessment (RBA) framework for measuring changes in SWiS services.
+							<a class="btn btn-mini" href="/images/docs/National SWiS.pdf"
+							 target="_blank">Read more</a>
+							<br>
+							<span class="anchor" id="art40"></span>
+							<a href="/images/docs/Plunket.pdf" target="_blank" style="line-height: 1.3em;">
+								<strong>
+									<br>Plunket</strong>
+							</a>
+							<br>This pilot-programme is trialling an early intervention that involves Plunket and Family Works Northern staff working
+							together to support clients. It is expected that the two organisations will achieve more for clients through working
+							together, than they could working independently.
+							<a class="btn btn-mini" href="/images/docs/Plunket.pdf" target="_blank">Read more</a>
+							<br>
+							<br>
+							<span class="anchor" id="art41"></span>
+							<a href="/images/docs/PSN%20RBA%20Culture.pdf" target="_blank">
+								<strong>Results Based Assessment</strong>
+							</a>
+							<br>Results Based Assessment (RBA) is a type of evaluation that measures outcomes. Government departments, not-for-profit
+							organisations and educational services are increasingly relying on RBA to provide evidence for the success and quality
+							of their practices. PSN has been at the forefront of RBA development since 2009. Using specially designed survey tools,
+							PSN collects information from Family Works, Enliven, Coactive and Budgeting Services.
+							<a class="btn btn-mini" href="/images/docs/PSN RBA Culture.pdf"
+							 target="_blank">Read more</a>
+							<br>
+							<br>
+							<span class="anchor" id="art42"></span>
+							<a href="/images/docs/Refugee%20Catch%20Up%20Class.pdf" target="_blank">
+								<strong>Refugee Catch-Up Class</strong>
+							</a>
+							<br>The refugee student catch-up class began in 2005 after Somali community members voiced concern about the under-achievement
+							of their college-age, school children. The catch-up class is a collaborative effort between families and community.
+							The majority of students are Somali and Eritrean.
+							<a class="btn btn-mini" href="/images/docs/Refugee Catch Up Class.pdf"
+							 target="_blank">Read more</a>
+							<br>
+							<br>
+							<span class="anchor" id="art43"></span>
+							<a href="/images/docs/Shine.pdf" target="_blank">
+								<strong>Safer Homes in New Zealand Everyday (Shine)</strong>
+							</a>
+							<br>Shine delivers training on domestic abuse to a wide range of professionals who work in the social services or criminal
+							justice system. A small number of these training programmes are open to the public.
+							<a class="btn btn-mini" href="/images/docs/Shine.pdf"
+							 target="_blank">Read more</a>
+							<br>
+							<br>
+							<span class="anchor" id="art44"></span>
+							<a href="/images/docs/SWiS%20PSN%20RBA%20(1).pdf" target="_blank">
+								<strong>Social Workers in Schools</strong>
+							</a>
+							<br>The Social Workers in Schools (SWiS) service is funded by Child, Youth and Family (CYF) under the Ministry of Social
+							Development (MSD). The service was established in response to the impact social and family problems were having on
+							students.
+							<a class="btn btn-mini" href="/images/docs/SWiS%20PSN%20RBA%20(1).pdf" target="_blank">Read more</a>
+							<br>
+							<br>
+							<span class="anchor" id="art45"></span>
+							<a href="/images/docs/THETA%20Sexwise.pdf" target="_blank">
+								<strong>The Theatre in Education Trust (THETA) Sexwise Programme</strong>
+							</a>
+							<br>The New Zealand Health Curriculum states that the purpose of sexuality education is to provide students with the knowledge,
+							understanding and skills to develop positive attitudes towards sexuality, to take care of their sexual health and
+							to enhance interpersonal relationships.
+							<a class="btn btn-mini" href="/images/docs/THETA%20Sexwise.pdf" target="_blank">Read more</a>
+							<br>
+							<br>
+							<span class="anchor" id="art46"></span>
+							<a href="/images/docs/Waitakere%20Process%20Evaluation.pdf" target="_blank">
+								<strong>Waitakere Process Evaluation</strong>
+							</a>
+							<br>In 2010 Presbyterian Support Northern (PSN) began a results based assessment (RBA) pilot with Social Workers in Schools
+							(SWiS) based in Waitakere.
+							<a class="btn btn-mini" href="/images/docs/Waitakere%20Process%20Evaluation.pdf" target="_blank">Read more</a>
+					</p>
+					<span class="anchor" id="researchFindings"></span>
+					<div class="articlehead">Research Findings</div>
+					<p>Jun 2013 -
+						<a href="/images/docs/Dementia%20Report%20July%202013.pdf">Effective Client-Focussed Dementia Day Programmes in the Community: Improving the Quality of Life for People Living
+							with Dementia and their Families</a>
+						<br>
+						<br>Nov 2012 -
+						<a href="/images/docs/2012%20Oct%20SDP%20Final%20A%20%20Best-Practice.pdf" target="_blank">Evaluation of Safer Dance Parties and Large Events</a>
+						<br>
+						<br>Nov 2012 -
+						<a href="/images/docs/2012%20Oct%20SDP%20final%20A%20report.pdf" target="_blank">Safer Parties Together: One Voice</a>
+						<br>
+						<br>Jan 2011 -
+						<a href="/images/docs/10%2001%2011%20Exec%20Summary.pdf" target="_blank">Evaluation of the Kidpower Teenpower Fullpower Healthy Relationships Programme</a>
+						<br>
+						<br>Dec 2010 -
+						<a href="/images/docs/10%2001%2011%20Exec%20Summary.pdf" target="_blank">Review of North Shore Family Violence Crisis and Advocacy Service Requirements</a>
+					</p>
+
+				</div>
+				<!-- end of content -->
+			</div>
+			<!-- end of main -->
+		</div>
+		<!-- end of container -->
+	</div>
+	<!-- end of main-body -->
 	<footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
 					<h5 class="footer-h5">Navigation</h5>
 					<ul class="footer-nav">
-						<li><a href="">About Us</a></li>
-						<li><a href="">Our People</a></li>
-						<li><a href="">Our Services</a></li>
-						<li><a href="">News and Events</a></li>
-						<li><a href="">Research and Evaluation</a></li>
-						<li><a href="">Contact</a></li>
+						<li>
+							<a href="">About Us</a>
+						</li>
+						<li>
+							<a href="">Our People</a>
+						</li>
+						<li>
+							<a href="">Our Services</a>
+						</li>
+						<li>
+							<a href="">News and Events</a>
+						</li>
+						<li>
+							<a href="">Research and Evaluation</a>
+						</li>
+						<li>
+							<a href="">Contact</a>
+						</li>
 					</ul>
 				</div>
 				<div class="col-md-4">
 					<h5 class="footer-h5">Stay Connected</h5>
 					<div class="sprites">
-						<a href=""><img src="assets/socialiconfacebook.png" alt=""></a>
-						<a href=""><img src="assets/socialicontwitter.png" alt=""></a>
-						<a href=""><img src="assets/socialicongooogle.png" alt=""></a>
-						<a href=""><img src="assets/socialiconblogg.png" alt=""></a>
-						<a href=""><img src="assets/socialiconlink.png" alt=""></a>
+						<a href="">
+							<img src="assets/socialiconfacebook.png" alt="">
+						</a>
+						<a href="">
+							<img src="assets/socialicontwitter.png" alt="">
+						</a>
+						<a href="">
+							<img src="assets/socialicongooogle.png" alt="">
+						</a>
+						<a href="">
+							<img src="assets/socialiconblogg.png" alt="">
+						</a>
+						<a href="">
+							<img src="assets/socialiconlink.png" alt="">
+						</a>
 					</div>
 					<div class="footer-logo">
 						<img src="assets/dwd.png" alt="">
 					</div>
 					<h5 class="footer-h5">Code Of Ethics</h5>
-					<p class="footer-content">Click the following to view our <a href="">Code of Ethics.</a></p>
+					<p class="footer-content">Click the following to view our
+						<a href="">Code of Ethics.</a>
+					</p>
 				</div>
 				<div class="col-md-4">
 					<h5 class="footer-h5">Contact Us</h5>
 					<ul class="footer-nav">
-						<li><a href="">Impact Research</a></li>
-						<li><a href="">PO Box 9591</a></li>
-						<li><a href="">Newmarket</a></li>
-						<li><a href="">Sivl;smf 1149</a></li>
-						<li><a href="">Phone: 09 520 8696</a></li>
-						<li><a href="">Email: <span>info@impactresearch.org.nz</span></a></li>
+						<li>
+							<a href="">Impact Research</a>
+						</li>
+						<li>
+							<a href="">PO Box 9591</a>
+						</li>
+						<li>
+							<a href="">Newmarket</a>
+						</li>
+						<li>
+							<a href="">Sivl;smf 1149</a>
+						</li>
+						<li>
+							<a href="">Phone: 09 520 8696</a>
+						</li>
+						<li>
+							<a href="">Email:
+								<span>info@impactresearch.org.nz</span>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -362,7 +1285,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<p class="copy-right">2015 © Impact Research All Rights Reserved <span>Site by <a href="">Veratech</a></span></p>
+						<p class="copy-right">2015 © Impact Research All Rights Reserved
+							<span>Site by
+								<a href="">Veratech</a>
+							</span>
+						</p>
 					</div>
 					<div class="col-md-6 lower-footer-logo">
 						<img src="assets/footerlogo.png" alt="">
@@ -372,10 +1299,11 @@
 		</div>
 	</footer>
 
-	
+
 	<script src="js/jquery.min-3.3.1.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/custom.js"></script>
 
 </body>
+
 </html>
